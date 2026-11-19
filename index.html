@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wild World Safari Park — yovvoyi tabiat olamiga sayohat!">
+  <title>Wild World — Safari Park</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stayle.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-logo">W<span>W</span></div>
+    <p>Yovvoyi tabiat olamiga xush kelibsiz...</p>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo"><span class="logo-icon">✦</span> WILD<span>WORLD</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#animals">Hayvonlar</a>
+      <a href="#zones">Hududlar</a>
+      <a href="#adventure">Sarguzasht</a>
+      <a href="#gallery">Galereya</a>
+      <a href="#contact">Aloqa</a>
+      <button class="nav-ticket" data-ticket>Chipta olish ↗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="pulse"></span> TABIATNI HIS QILING</span>
+        <h1>Yovvoyi tabiat<br>olamiga <em>xush kelibsiz.</em></h1>
+        <p>Unutilmas sarguzasht, hayratlanarli hayvonlar va tabiatning betakror go‘zalligi sizni kutmoqda.</p>
+        <div class="hero-actions">
+          <a href="#animals" class="btn btn-light">Hayvonlarni ko‘rish <span>↗</span></a>
+          <button class="btn btn-outline" data-ticket>Chipta sotib olish</button>
+        </div>
+        <div class="hero-note"><span>✦</span> Tabiat bilan yuzma-yuz uchrashuv</div>
+      </div>
+      <div class="hero-bottom">
+        <span>01 — 04 / WILD EXPERIENCE</span>
+        <span>PASTGA AYLANING ↓</span>
+      </div>
+      <div class="hero-floating">
+        <span class="floating-icon">🌿</span>
+        <div><strong>50+</strong><small>Hayvon turlari</small></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad reveal" id="about">
+      <div class="intro-small">BIZ HAQIMIZDA / 01</div>
+      <div class="intro-main">
+        <h2>Bu shunchaki hayvonot bog‘i emas. Bu — <em>tabiat bilan uchrashuv.</em></h2>
+        <div class="intro-copy">
+          <p>Wild World Safari Park’da dunyoning turli burchaklaridan kelgan ajoyib hayvonlarni yaqindan tomosha qiling. Har bir qadam yangi kashfiyot, har bir lahza unutilmas xotira.</p>
+          <a href="#zones" class="text-link">Bizning hududlarimiz <span>↗</span></a>
+        </div>
+      </div>
+      <div class="stats">
+        <div><strong data-count="50">0</strong><span>Hayvon turlari</span></div>
+        <div><strong data-count="12">0</strong><span>Tabiat hududlari</span></div>
+        <div><strong data-count="365">0</strong><span>Kun sarguzasht</span></div>
+        <div><strong data-count="100">0</strong><span>% Hayrat</span></div>
+      </div>
+    </section>
+
+    <section class="animals-section section-pad" id="animals">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow dark-eyebrow">WILD COLLECTION / 02</span><h2>Yovvoyi olam <em>yulduzlari.</em></h2></div>
+        <p>Dunyoning eng qiziqarli va betakror hayvonlari bilan tanishing.</p>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">Barchasi <span>50</span></button>
+        <button class="filter" data-filter="mammal">Sutemizuvchilar</button>
+        <button class="filter" data-filter="bird">Qushlar</button>
+        <button class="filter" data-filter="reptile">Sudralib yuruvchilar</button>
+        <button class="filter" data-filter="water">Suv hayvonlari</button>
+      </div>
+      <div class="animal-grid" id="animalGrid">
+        <div class="loading-cards">Hayvonlar rasmlari yuklanmoqda...</div>
+      </div>
+      <div class="animals-foot"><span>50 TA AJOYIB TUR</span><span>HAR BIRI O‘ZIGA XOS ✦</span></div>
+    </section>
+
+    <section class="adventure" id="adventure">
+      <div class="adventure-image"></div>
+      <div class="adventure-content reveal">
+        <span class="eyebrow">UNUTILMAS TAJRIBA / 03</span>
+        <h2>Har bir kun —<br><em>yangi sarguzasht.</em></h2>
+        <p>Oilaviy sayr, hayvonlarni kuzatish va tabiatning ajoyib manzaralari. Bu yerda har bir tashrif o‘zgacha taassurot qoldiradi.</p>
+        <a href="#zones" class="btn btn-light">Sayohatni boshlash ↗</a>
+      </div>
+      <div class="adventure-number">WILD<br>EXPERIENCE</div>
+    </section>
+
+    <section class="zones section-pad" id="zones">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow dark-eyebrow">EXPLORE THE PARK / 04</span><h2>Har xil olamlar,<br><em>bitta manzil.</em></h2></div>
+        <p>Har bir hudud o‘ziga xos muhit va hayratlanarli kashfiyotlarga boy.</p>
+      </div>
+      <div class="zone-grid">
+        <article class="zone-card zone-one reveal">
+          <div class="zone-photo"></div><div class="zone-info"><span>01 / AFRIKA</span><h3>Safari tekisliklari</h3><p>Arslonlar, jirafalar va fillar olami.</p></div>
+        </article>
+        <article class="zone-card zone-two reveal">
+          <div class="zone-photo"></div><div class="zone-info"><span>02 / TROPIC</span><h3>Yashil o‘rmon</h3><p>Rang-barang qushlar va tropik tabiat.</p></div>
+        </article>
+        <article class="zone-card zone-three reveal">
+          <div class="zone-photo"></div><div class="zone-info"><span>03 / WATER</span><h3>Suv olami</h3><p>Suvdagi ajoyib jonzotlar.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ticket-banner">
+      <div class="ticket-leaf">✳</div>
+      <div class="ticket-text reveal"><span class="eyebrow">SIZNI KUTYAPMIZ</span><h2>Tabiat sizni<br><em>chorlamoqda.</em></h2><p>Bugunoq chiptangizni oling va unutilmas sayohatga chiqing.</p></div>
+      <div class="ticket-action reveal"><span>BOSHLANG‘ICH NARX</span><strong>30 000 <small>so‘m</small></strong><button class="btn btn-dark" data-ticket>Chipta olish ↗</button></div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-heading reveal"><div><span class="eyebrow dark-eyebrow">VISUAL STORIES / 05</span><h2>Tabiatning <em>go‘zalligi.</em></h2></div><p>Yovvoyi olamdan unutilmas lahzalar.</p></div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1200&q=85" alt="Arslon" loading="lazy"><span>01 / WILD KING</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=800&q=85" alt="Yovvoyi tabiat" loading="lazy"><span>02 / NATURE</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551316679-9c6ae9dec224?auto=format&fit=crop&w=800&q=85" alt="Tabiat" loading="lazy"><span>03 / WILD LIFE</span></div>
+      </div>
+    </section>
+
+    <section class="visit section-pad" id="contact">
+      <div class="visit-info reveal"><span class="eyebrow dark-eyebrow">PLAN YOUR VISIT / 06</span><h2>Biz bilan<br><em>uchrashing.</em></h2><p>Yaqinlaringizni olib keling va tabiat bilan tanishing. Sizni kutib qolamiz!</p>
+        <div class="visit-detail"><span>⌖</span><div><small>MANZIL</small><strong>Toshkent shahri, Safari Park</strong></div></div>
+        <div class="visit-detail"><span>◷</span><div><small>ISH VAQTI</small><strong>Har kuni: 09:00 — 20:00</strong></div></div>
+        <div class="visit-detail"><span>☎</span><div><small>TELEFON</small><strong>+998 90 123 45 67</strong></div></div>
+      </div>
+      <div class="visit-card reveal"><div class="visit-card-top">WILD WORLD <span>✳</span></div><div class="visit-card-center">THE<br><em>WILD</em><br>IS CALLING.</div><div class="visit-card-bottom"><span>EXPLORE • DISCOVER • PROTECT</span><span>WW — 2026</span></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a href="#" class="logo footer-logo">✦ WILD<span>WORLD</span></a><p>Tabiatni kashf eting. Uni seving. Uni asrang.</p><button class="back-top" id="backTop">↑</button></div>
+    <div class="footer-links">
+      <div><h4>WILD WORLD</h4><a href="#about">Biz haqimizda</a><a href="#animals">Hayvonlar</a><a href="#zones">Hududlar</a></div>
+      <div><h4>MEHMONLAR UCHUN</h4><a href="#contact">Tashrif rejalash</a><a href="#adventure">Sarguzashtlar</a><a href="#gallery">Galereya</a></div>
+      <div><h4>ALOQA</h4><a href="#contact">Toshkent, O‘zbekiston</a><a href="tel:+998901234567">+998 90 123 45 67</a><a href="mailto:hello@wildworld.uz">hello@wildworld.uz</a></div>
+      <div><h4>IJTIMOIY TARMOQLAR</h4><a href="#">Instagram ↗</a><a href="#">Telegram ↗</a><a href="#">YouTube ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 WILD WORLD SAFARI PARK</span><span>MADE FOR NATURE ✳</span><a href="#home">YUQORIGA ↑</a></div>
+  </footer>
+
+  <div class="modal" id="ticketModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeTicket">×</button>
+      <span class="eyebrow dark-eyebrow">WILD WORLD EXPERIENCE</span>
+      <h2>Chiptangizni <em>band qiling.</em></h2>
+      <p class="modal-desc">Chipta turini va tashrif kunini tanlang.</p>
+      <form id="ticketForm">
+        <label>Ism va familiya<input type="text" id="customerName" placeholder="Ismingizni kiriting" required></label>
+        <label>Telefon raqam<input type="tel" id="customerPhone" placeholder="+998 __ ___ __ __" required></label>
+        <label>Tashrif sanasi<input type="date" id="visitDate" required></label>
+        <div class="ticket-types">
+          <div class="ticket-type"><div><strong>Kattalar</strong><small>50 000 so‘m / dona</small></div><input type="number" min="0" max="20" value="1" id="adultQty"></div>
+          <div class="ticket-type"><div><strong>Bolalar</strong><small>30 000 so‘m / dona</small></div><input type="number" min="0" max="20" value="0" id="childQty"></div>
+          <div class="ticket-type"><div><strong>Oilaviy</strong><small>140 000 so‘m / to‘plam</small></div><input type="number" min="0" max="20" value="0" id="familyQty"></div>
+        </div>
+        <div class="total-row"><span>Jami summa</span><strong id="totalPrice">50 000 so‘m</strong></div>
+        <button class="btn btn-dark submit-ticket" type="submit">Buyurtma berish ↗</button>
+        <small class="demo-note">Demo: buyurtma hozircha faqat namoyish uchun qabul qilinadi.</small>
+      </form>
+    </div>
+  </div>
+
+  <div class="success-modal" id="successModal">
+    <div class="success-box"><div class="success-icon">✓</div><h2>Rahmat!</h2><p id="successText">Buyurtmangiz qabul qilindi.</p><button class="btn btn-dark" id="closeSuccess">Yopish</button></div>
+  </div>
+
+  <button class="back-top floating-top" id="floatingTop">↑</button>
+  <script src="./java.js"></script>
+</body>
+</html>
